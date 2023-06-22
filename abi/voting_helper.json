@@ -1,0 +1,776 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IVoter",
+        "name": "voter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "classicFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "stableFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenTo",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "pathTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "getPool",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "pool",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isWhitelisted",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint16",
+            "name": "poolType",
+            "type": "uint16"
+          },
+          {
+            "internalType": "address",
+            "name": "token0",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "token1",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "gauge",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "bribe",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "paused",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolVote",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolClaimable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtRewardPerVote",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "shareToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "stakingFee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalStaked",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalStakedValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userStaked",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gaugeRewardTokenCount",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastUpdate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardPerShare",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardAmountValue",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimable",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "debtRewardPerShare",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct VotingHelper.RewardTokenData[]",
+            "name": "gaugeRewardTokens",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVotes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userVotes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bribeRewardTokenCount",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastUpdate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardPerShare",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardAmountValue",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimable",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "debtRewardPerShare",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct VotingHelper.RewardTokenData[]",
+            "name": "bribeRewardTokens",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct VotingHelper.VotingPoolData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IVoter",
+        "name": "voter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "startIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "count",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "classicFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "stableFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenTo",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "pathTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "getPools",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "pool",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isWhitelisted",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint16",
+            "name": "poolType",
+            "type": "uint16"
+          },
+          {
+            "internalType": "address",
+            "name": "token0",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "token1",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "gauge",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "bribe",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "paused",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolVote",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolClaimable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtRewardPerVote",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "shareToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "stakingFee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalStaked",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalStakedValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userStaked",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gaugeRewardTokenCount",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastUpdate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardPerShare",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardAmountValue",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimable",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "debtRewardPerShare",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct VotingHelper.RewardTokenData[]",
+            "name": "gaugeRewardTokens",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVotes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userVotes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bribeRewardTokenCount",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastUpdate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardPerShare",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardAmountValue",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimable",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "debtRewardPerShare",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct VotingHelper.RewardTokenData[]",
+            "name": "bribeRewardTokens",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct VotingHelper.VotingPoolData[]",
+        "name": "pools",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IVoter",
+        "name": "voter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getSimpleUserVotingData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "userVotesLength",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "votingPowers",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userLastVoted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userUsedVotes",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct VotingHelper.SimpleUserVotingData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IVoter",
+        "name": "voter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "startIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "count",
+        "type": "uint256"
+      }
+    ],
+    "name": "getUserVotes",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "pool",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "votes",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IVoter.Vote[]",
+        "name": "votes",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IVoter",
+        "name": "voter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "classicFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "stableFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenTo",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "pathTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "getUserVotingData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "totalVotingPowers",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVotes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "rewardToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rewardPerVote",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rewardRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastUpdate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dailyRewardValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userVotesLength",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "votingPowers",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userLastVoted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userUsedVotes",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct VotingHelper.UserVotingData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IVoter",
+        "name": "voter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "classicFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "stableFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenTo",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "pathTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "getVotingData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "totalVotingPowers",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVotes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "rewardToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rewardPerVote",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rewardRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastUpdate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dailyRewardValue",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct VotingHelper.VotingData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

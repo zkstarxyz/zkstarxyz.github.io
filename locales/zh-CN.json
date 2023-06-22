@@ -1,0 +1,38 @@
+{
+    "trade": "交易",
+    "tradeTooltip": "Trade between tokens easily",
+    "pool": "流动池",
+    "poolTooltip": "Manage your liquidity positions",
+    "wrap": "打包",
+    "wrapTooltip": "Wrap or unwrap stable assets",
+    "earn": "挖矿",
+    "earnTooltip": "Earn boosted rewards with your liquidity",
+    "dao": "DAO",
+    "daoTooltip": "Staking and participate in governance",
+    "launch": "首发",
+    "launchTooltip": "Participate in launch of latest tokens",
+    "dashboard": "仪表盘",
+    "dashboardTooltip": "Track your account and portfolio",
+
+    "faucet": "水龙头",
+    "faucetRequestButton": "从水龙头请求资金",
+
+    "wallet-tooltip": "已连接的钱包",
+
+    "wrongNetwork": "错误的网络",
+    "connectWallet": "连接钱包",
+
+    "poolOverview": "流动池概览",
+    "removeLiquidity": "移除流动性",
+
+    "balance": "余额",
+
+    "pair": "Pair",
+
+    "noPosition": "没有发现你的流动性仓位",
+    "yourPositions": "你的仓位",
+    "newPosition": "新仓位",
+
+    "increaseLiquidity": "增加流动性",
+    "addLiquidity": "添加流动性"
+}

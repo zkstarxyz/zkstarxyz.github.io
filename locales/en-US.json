@@ -1,0 +1,125 @@
+{
+    "trade": "Trade",
+    "tradeTooltip": "Trade between tokens easily",
+    "pool": "Pool",
+    "poolTooltip": "Manage your liquidity positions",
+    "wrap": "Wrap",
+    "wrapTooltip": "Wrap or unwrap stable assets",
+    "earn": "Earn",
+    "earnTooltip": "Earn boosted rewards with your liquidity",
+    "dao": "DAO",
+    "daoTooltip": "Staking and participate in governance",
+    "launch": "Launch",
+    "launchTooltip": "Participate in launch of latest tokens",
+    "dashboard": "Dashboard",
+    "dashboardTooltip": "Track your account and portfolio",
+
+    "faucet": "Faucet",
+    "feeTokenTooltip": "You can pay network fees in tokens other than Ether.",
+
+    "settings": "Settings",
+    "reset": "Reset",
+    "interfaceLanguage": "Language",
+    "theme": "Theme",
+
+    "maxSlippage": "Max Slippage",
+    "transactionDeadline": "Transaction deadline",
+    "seconds": "seconds",
+    "deadlineWarn": "The deadline is too small. Your transaction may fail!",
+    "close": "Close",
+    "inputKit": "Input kit",
+    "button": "Button",
+    "slider": "Slider",
+    "disable": "Disable",
+    "customTokens": "Custom tokens",
+    "customTokensTooltip": "Custom tokens that are imported via contract address.",
+
+    "swap": "Swap",
+    "gasRefund": "Gas Refund",
+    "gasRefundTooltip": "The gas cost is dynamic and any unused gas fees will be refunded up to 99%.",
+    "priceImpact": "Price Impact",
+    "priceImpactTooltip": "The different between market price and expected fill price due to your trade size.",
+    "maximumPay": "Max Pay",
+    "minimumReceive": "Min Received",
+    "minimumReceiveTooltip": "The minimum amount you are guaranteed to receive after slippage.",
+    "slippageTooltip": "Transaction will revert if price changes unfavorably by more than your slippage tolerance.",
+    "expectedPay": "Expected Pay",
+    "expectedReceive": "Expected Receive",
+    "expectedTooltip": "Your currently swapping through PSM which do not impose a slippage.",
+    "networkFee": "Network Fee",
+    "networkFeeTooltip": "The total gas fee of this trade.",
+    "router": "Router",
+    "routerTooltip": "The router can optimizes your total output.",
+
+    "selectToken": "Select a token",
+    "selectFeeToken": "Select a fee token",
+    "searchToken": "Search name or paste address",
+    "searchPool": "Search name or paste address",
+
+    "copyAddress": "Copy Address",
+    "viewOnExplorer": "View on",
+
+    "account": "Account",
+    "logout": "Logout",
+    "connectedVia": "Connected via",
+    "wallet": "Wallet",
+    "recentTransactions": "Recent Transactions",
+    "transactions": "Transactions",
+    "clear": "Clear",
+    "noTransaction": "You have no transactions yet",
+    "startTrading": "Start Trading",
+
+
+
+    "wrongNetwork": "Switch",
+    "connectWallet": "Connect",
+
+    "unlocking": "Unlocking",
+    "signing": "Signing",
+
+    "unlockLPToken": "Unlock LP token",
+    "unlockLPTooltip": "Unlock to allow ZinkStar to use your LP token. You only need to unlock once.",
+
+    "permitLPToken": "Permit LP token",
+    "permitLPTooltip": "Permit to allow ZinkStar to use your LP token. This will not incur gas costs.",
+
+    "poolShare": "Pool Share",
+    "liquidityBalance": "LP Balance",
+    "yourPoolShare": "Your Pool Share",
+
+    "gettingStarted": "Getting Started",
+    "gettingStartedTooltip": "View the user guide",
+    "topPools": "Top Pools",
+    "topPoolsTooltip": "Explore the analytics",
+
+
+    "poolOverview": "Pools Overview",
+    "increaseLiquidity": "Increase Liquidity",
+    "addLiquidity": "Add Liquidity",
+    "newPosition": "New Position",
+    "noPosition": "No liquidity position found",
+    "yourPositions": "Your Positions",
+    "insufficientBalance": "Insufficient {} Balance",
+
+    "removeLiquidity": "Withdraw Liquidity",
+    "removeLiquidityTooltip": "Burn LP tokens and withdraw pool tokens.",
+    "amountToReedem": "Amount to withdraw",
+
+
+    "faucetRequestButton": "Claim now",
+    "sendTweet": "Send a tweet",
+    "retweetNow": "Retweet now",
+    "retweetTooltip": "You will be able to claim after retweet.",
+    "faucetClaimTooltip": "Congrats! You can claim the funds now.",
+    "loading": "Loading",
+    "faucetAlreadyClaimed": "You have already claimed ✔",
+
+
+
+
+    
+    "balance": "Balance",
+    "pair": "Pair",
+    "reserve": "Reserve",
+    "per": "per"
+}

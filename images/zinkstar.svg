@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" zoomAndPan="magnify"
+    viewBox="0 0 375 375" height="300" version="1.0">
+    <defs>
+        <path id="pathAttribute"
+            d="M 11.972656 11.972656 L 359.222656 11.972656 L 359.222656 359.222656 L 11.972656 359.222656 Z M 11.972656 11.972656 "
+            fill="blue" filter="url(#bgShadow)">
+            <filter id="bgShadow">
+                <feDropShadow id="bgShadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black"></feDropShadow>
+            </filter>
+        </path>
+    </defs>
+    <g>
+        <path id="pathAttribute"
+            d="M 185.597656 359.222656 C 89.675781 359.222656 11.972656 280.984375 11.972656 185.597656 C 11.972656 90.210938 89.675781 11.972656 185.597656 11.972656 C 281.519531 11.972656 359.222656 89.675781 359.222656 185.597656 C 359.222656 281.519531 280.984375 359.222656 185.597656 359.222656 Z M 185.597656 22.691406 C 95.570312 22.691406 22.691406 95.570312 22.691406 185.597656 C 22.691406 275.625 95.570312 348.503906 185.597656 348.503906 C 275.625 348.503906 348.503906 275.625 348.503906 185.597656 C 348.503906 95.570312 275.089844 22.691406 185.597656 22.691406 Z M 185.597656 22.691406 "
+            fill-opacity="1" fill-rule="nonzero" fill="blue" filter="url(#bgShadow)"></path>
+    </g>
+    <g id="inner-icon" transform="translate(60, 50)"> <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250"
+            fill="currentColor" class="bi bi-star" viewBox="0 0 16 16" id="IconChangeColor">
+            <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                id="mainIconPathAttribute" fill="blue" filter="url(#shadow)"></path>
+            <filter id="shadow">
+                <feDropShadow id="shadowValue" stdDeviation="0" dx="0" dy="0" flood-color="black"></feDropShadow>
+            </filter>
+        </svg> </g>
+</svg>

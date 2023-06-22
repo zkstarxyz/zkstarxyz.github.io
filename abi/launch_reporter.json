@@ -1,0 +1,154 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ILaunchPool",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "saleToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "saleAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "paymentToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalPaymentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "paymentTokenCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "time",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "endTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "setStarted",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "setEnded",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "claimEnabled",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawEnabled",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "refundEnabled",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userPaymentAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userSaleAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "snapshotTimesLength",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LaunchReporter.LaunchPoolData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ILaunchPool",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "startIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "count",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSnapshots",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "time",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ILaunchPool.Snapshot[]",
+        "name": "data",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

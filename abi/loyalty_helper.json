@@ -1,0 +1,185 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISyncSwapLoyaltyToken",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "getEpoch",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "epoch",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "epochTotalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "epochBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "epochStartTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "epochRewardAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LoyaltyHelper.EpochData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "epochs",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISyncSwapLoyaltyToken",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "getEpochs",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "epoch",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "epochTotalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "epochBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "epochStartTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "epochRewardAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LoyaltyHelper.EpochData[]",
+        "name": "data",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISyncSwapLoyaltyToken",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "getProgramInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "currentEpoch",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userTotalClaimed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isClaimPaused",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LoyaltyHelper.LoyalProgramInfo",
+        "name": "info",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

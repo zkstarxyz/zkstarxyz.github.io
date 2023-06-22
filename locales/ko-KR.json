@@ -1,0 +1,16 @@
+{
+    "trade": "스왑",
+    "tradeTooltip": "Trade between tokens easily",
+    "pool": "풀",
+    "poolTooltip": "Manage your liquidity positions",
+    "wrap": "Wrap",
+    "wrapTooltip": "Wrap or unwrap stable assets",
+    "earn": "소득",
+    "earnTooltip": "Earn boosted rewards with your liquidity",
+    "dao": "DAO",
+    "daoTooltip": "Staking and participate in governance",
+    "launch": "Launch",
+    "launchTooltip": "Participate in launch of latest tokens",
+    "dashboard": "Dashboard",
+    "dashboardTooltip": "Track your account and portfolio"
+}
