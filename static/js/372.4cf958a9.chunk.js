@@ -1,4 +1,4 @@
-/*! For license information please see 372.4cf958a9.chunk.js.LICENSE.txt */
+/*!For license information please see 372.4cf958a9.chunk.js.LICENSE.txt*/
 (self.webpackChunksyncswap = self.webpackChunksyncswap || []).push([[372], {
     15372: function(e) {
         self,
